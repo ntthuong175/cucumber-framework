@@ -35,11 +35,7 @@
 			<version>${cucumber.version}</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>info.cukes</groupId>
-			<artifactId>cucumber-testng</artifactId>
-			<version>${cucumber.version}</version>
-		</dependency>
+	
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -103,9 +99,12 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<projectName>SELENIUM ONLINE - BANK GURU</projectName>
+							<projectName>BANK GURU CUCUMBER REPORT</projectName>
 							<outputDirectory>${project.build.directory}/site/cucumber-reporting</outputDirectory>
 							<cucumberOutput>${project.build.directory}/site/cucumber.json</cucumberOutput>
+							<jsonFiles>
+							<param>**/*.json</param>
+							</jsonFiles>
 							<enableFlashCharts>true</enableFlashCharts>
 							<skippedFails>true</skippedFails>
 						</configuration>

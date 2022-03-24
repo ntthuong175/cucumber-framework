@@ -17,7 +17,7 @@ plugin = { "pretty", "html:target/site/cucumber-report-default",
 		"json:target/site/cucumber.json" }, 
 //dryRun = true, 
 snippets = SnippetType.UNDERSCORE,
-tags = { "@datatable_scenario" })
+tags = { "@login" })
 
 public class FacebookTestRunner {
 

@@ -9,7 +9,7 @@ Feature: Facebook login page
     And Click to Submit button
     And Close application
 
-@param_mark #phổ biến
+@param_mark 
 Scenario: Scenario have parameter
     Given Open facebook application
     When Input to Username textbox with "autotest@gmail.com"
@@ -17,7 +17,7 @@ Scenario: Scenario have parameter
     And Click to Submit button
     Then Close application
     
-@param_without_mark #gây hiểu nhầm
+@param_without_mark 
 Scenario: Scenario have parameter
     Given Open facebook application
     When Input to Username textbox with autotest@gmail.com

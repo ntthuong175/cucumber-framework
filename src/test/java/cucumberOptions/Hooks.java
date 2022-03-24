@@ -23,6 +23,7 @@ public class Hooks {
 	@Before // synchronized = handle đồng bộ
 	public synchronized static WebDriver openAndQuitBrowser() {
 		// Run by Maven command line
+		//mvn clean test -DBROWSER = chrome
 		String browser = System.getProperty("BROWSER");
 		System.out.println("Browser name run by command line = " + browser);
 
