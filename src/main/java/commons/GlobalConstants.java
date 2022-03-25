@@ -9,7 +9,7 @@ public class GlobalConstants {
 	public static final String DOWNLOAD_FOLDER_PATH= PROJECT_PATH +  File.separator + "downloadFiles" +File.separator;
 	public static final long LONG_TIMEOUT= 30;
 	public static final long SHORT_TIMEOUT= 5;
-	public static final String BANK_GURU_URL = "";
+	public static final String PIONEER_URL = "http://dev-vn.vtl-lab.com:8043/admin/login";
 
 
 }

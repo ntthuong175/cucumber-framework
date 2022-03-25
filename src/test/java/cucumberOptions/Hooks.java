@@ -89,7 +89,7 @@ public class Hooks {
 				Runtime.getRuntime().addShutdownHook(new Thread(new BrowserCleanup()));
 			}
 
-			driver.get(GlobalConstants.BANK_GURU_URL);
+			driver.get(GlobalConstants.PIONEER_URL);
 			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 			log.info("------------- Started the browser -------------");
 		}

@@ -99,7 +99,7 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<projectName>BANK GURU CUCUMBER REPORT</projectName>
+							<projectName>Pioneer Center CUCUMBER REPORT</projectName>
 							<outputDirectory>${project.build.directory}/site/cucumber-reporting</outputDirectory>
 							<cucumberOutput>${project.build.directory}/site/cucumber.json</cucumberOutput>
 							<jsonFiles>
