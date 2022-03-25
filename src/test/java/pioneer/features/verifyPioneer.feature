@@ -2,12 +2,13 @@
 Feature: Pioneer Center login page
 
    @incorrect_email_password
-  Scenario: Verify error message displays
+  Scenario Outline: Verify error message displays
     When Input to Email textbox with "<Email>"
     And Input to Password textbox with "<Password>"
     And Click to Submit button
     Then Verify error message displays
-    And Close page
+     
+    Examples:
 | Email                | Password| 
 | admin123@vtl-vtl.com | 123456  | 
 | admin@vtl-vtl.com    | 111111  |
@@ -20,4 +21,4 @@ Feature: Pioneer Center login page
     And Input to Password textbox with "123456"
     And Click to Submit button
     Then Homepage displays
-    And Close page
+    

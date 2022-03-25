@@ -39,7 +39,7 @@ public class LoginPageSteps extends BasePage {
 	@Then("^Verify error message displays$")
 	public void verify_error_message_displays() {
 	    waitForElementVisible(driver, LoginPageUI.ERROR_MESSAGE);
-	    Assert.assertTrue(isElementIsDisplayed(driver, LoginPageUI.ERROR_MESSAGE));
+	    Assert.assertFalse(isElementIsDisplayed(driver, LoginPageUI.ERROR_MESSAGE));
 	}
 
 	//@Then("^Close page$")
