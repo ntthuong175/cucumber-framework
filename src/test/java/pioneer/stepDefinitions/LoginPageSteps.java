@@ -42,11 +42,6 @@ public class LoginPageSteps extends BasePage {
 	    Assert.assertFalse(isElementIsDisplayed(driver, LoginPageUI.ERROR_MESSAGE));
 	}
 
-	//@Then("^Close page$")
-	//public void close_page(DataTable arg1) {
-	    
-	    
-	//}
 
 	
 
