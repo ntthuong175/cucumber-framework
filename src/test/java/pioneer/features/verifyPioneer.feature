@@ -2,7 +2,7 @@
 Feature: Pioneer Center login page
 
    @incorrect_email_password
-  Scenario Outline: Verify error message displays
+  Scenario Outline: Verify error message displays when login with incorrect account
     When Input to Email textbox with "<Email>"
     And Input to Password textbox with "<Password>"
     And Click to Submit button
@@ -22,7 +22,7 @@ Feature: Pioneer Center login page
 
   
     @login_with_valid_email_password
-  Scenario: Login with valid email and password
+  Scenario: Verify login successfully with valid account
     
     When Input to Email textbox with "admin@vtl-vtl.com"
     And Input to Password textbox with "123456"
