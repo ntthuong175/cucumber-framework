@@ -39,9 +39,13 @@ public class LoginPageSteps extends BasePage {
 	@Then("^Verify error message displays$")
 	public void verify_error_message_displays() {
 	    waitForElementVisible(driver, LoginPageUI.ERROR_MESSAGE);
-	    Assert.assertFalse(isElementIsDisplayed(driver, LoginPageUI.ERROR_MESSAGE));
+	    Assert.assertTrue(isElementIsDisplayed(driver, LoginPageUI.ERROR_MESSAGE));
 	}
-
+	@Then("^Verify error message for blank field displays$")
+	public void verify_error_message_for_blank_field_displays(){
+		waitForElementVisible(driver, LoginPageUI.EMAIL_ADDRESS);
+		Assert.assertEquals(getElementValidationMessage(driver,LoginPageUI.EMAIL_ADDRESS),"Please fill out this fields.");
+	}
 
 	
 

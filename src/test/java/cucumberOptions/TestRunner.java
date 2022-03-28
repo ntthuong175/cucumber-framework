@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 //Đường dẫn tới file features
-@CucumberOptions(features = "src\\test\\java\\pioneer\\features",
+@CucumberOptions(features = "src/test/java/pioneer/features",
 
 // Tìm đến package step Definitions
 glue = "pioneer.stepDefinitions",
